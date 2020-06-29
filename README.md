@@ -1,10 +1,10 @@
-# Front End Skils Assesment
+# Front End Skill Assesment
 
-Below you will find an image. We'd like you to build it. Sound simple right? The layout is easy, heck you could pull up bootstrap and knock this out in 15 minutes. That is a valid approach but it won't get you very far with us.
+Below you will find an image. We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in 15 minutes. That is a valid approach but it won't get you very far with us.
 
-The point of this Skill Assesment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finese? Are you test finatic? Show us your TDD process. Love data, and multi-teir designs? Let us see how you redux. Are you a build ninja? Let see those muscles flexed. 
+The point of this Skill Assesment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finese. Are you a test finatic? Show us your TDD process. Love data and multi-teir designs? Let us see how you redux. Are you a build ninja? Let see those muscles flexed. 
 
-Here are some things we want to see; how you layout your project and what tools you use, how does the project progress, what does your git history look like, and finally how you handle loose requirements - what you bring to the table. Here are some things we value; performance, reproducability, testing, accessibility, multi-channel deliverability. 
+Here are some things we want to see; how you layout your project and what tools you use, how does the project progress, what does your git history look like, and finally how you handle loose requirements - what you bring to the table. Here are some things we value; performance, reproducability, testing, accessibility, multi-channel deliverability ( SEO, Social, Desktop, Mobile, etc...). You should assume the data is seperate than the presentation.
 
 Fork this repo into your github or push it into your prefered git provider and make sure it is open. Fill this otherwise empty repo with goodness. You have 72 hours to submit your completed project.  
 
