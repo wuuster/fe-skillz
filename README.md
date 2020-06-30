@@ -20,7 +20,13 @@ Good luck.
 
 ---
 
+### Images
+
 The images from the above are in the directory next to this file. 
+
+---
+
+### Copy
 
 The copy is below.
 
