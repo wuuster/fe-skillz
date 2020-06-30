@@ -1,7 +1,7 @@
 # Front End Skill Assesment
 
-Below you will find an images of a header that contains sub-nav items.
-For desktop, on hover of the parent nav, sub-nav items should appear. For mobile, this will have an expand/collapse feature.
+Below you will find an images of a header that contains sub-nav items.  
+For desktop, on hover of the parent nav, sub-nav items should appear. For mobile, this will have an expand/collapse feature.  
 We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in under an hour. That is a valid approach but it won't get you very far with us.
 
 
@@ -19,9 +19,9 @@ Good luck.
 
 ![Wonderful Desktop](./wonderful-desktop.png)
 ![Wonderful Desktop Active Subnav](./wonderful-desktop-active-subnav.png)
-![Wonderful Mobile](./wonderful-mobile.png)
-![Wonderful Mobile Active Menu](./wonderful-mobile-active-menu.png)
-![Wonderful Mobile Active Subnav](./wonderful-mobile-active-subnav.png)
+![Wonderful Mobile](./wonderful-mobile.png =450x)
+![Wonderful Mobile Active Menu](./wonderful-mobile-active-menu.png =450x)
+![Wonderful Mobile Active Subnav](./wonderful-mobile-active-subnav.png =450x)
 
 ---
 
