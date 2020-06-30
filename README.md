@@ -1,7 +1,7 @@
 # Front End Skill Assesment
 
-Below you will find an images of a header that contains sub-nav items.  
-For desktop, on hover of the parent nav, sub-nav items should appear. For mobile, this will have an expand/collapse feature.  
+Below you will find images of a header that contains sub-nav items.  
+For desktop, sub-nav items should appear on hover of parent nav. For mobile, this will have an expand/collapse feature.  
 We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in under an hour. That is a valid approach but it won't get you very far with us.
 
 
@@ -33,11 +33,6 @@ Good luck.
 
 ---
 
-## Images
-
-The images from the above are in the directory next to this file. 
-
----
 ## Style Guide
 **fonts**  
 font-family: Arial  
