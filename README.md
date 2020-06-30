@@ -16,12 +16,20 @@ Good luck.
 ---
 
 ## Assessment Images:
-
+**Desktop - Default**  
 ![Wonderful Desktop](./wonderful-desktop.png)
+
+**Desktop - Active Subnav**  
 ![Wonderful Desktop Active Subnav](./wonderful-desktop-active-subnav.png)
-![Wonderful Mobile](./wonderful-mobile.png =450x)
-![Wonderful Mobile Active Menu](./wonderful-mobile-active-menu.png =450x)
-![Wonderful Mobile Active Subnav](./wonderful-mobile-active-subnav.png =450x)
+
+**Mobile - Default**  
+<img src="./wonderful-mobile.png" alt="Wonderful Mobile" width="350"/>
+
+**Mobile - Active Menu**  
+<img src="./wonderful-mobile-active-menu.png" alt="Wonderful Mobile Active Menu" width="350"/>
+
+**Mobile - Active Subnav**  
+<img src="./wonderful-mobile-active-subnav.png" alt="Wonderful Mobile Active Subnav" width="350"/>
 
 ---
 
@@ -31,26 +39,24 @@ The images from the above are in the directory next to this file.
 
 ---
 ## Style Guide
-**fonts**
-font-family: Arial
-
-**mobile**
-body
-font-size: 14px
-
-menu button
-font-size: 12px
-
-**desktop**
-body
-font-size: 12px
-
-**Colors**
-white: #ffffff
-black: #000000
-gold: #d1a04f
-beige: #79766b
-dark grey background: #151515
-xdark grey: #202020
-dark grey: #353535
-medium grey: #323232
+**fonts**  
+font-family: Arial  
+  
+**mobile body**  
+font-size: 14px  
+  
+**mobile menu button**  
+font-size: 12px  
+  
+**desktop body**  
+font-size: 12px  
+  
+**Colors**  
+white: #ffffff  
+black: #000000  
+gold: #d1a04f  
+beige: #79766b  
+dark grey background: #151515  
+extra dark grey: #202020  
+dark grey: #353535  
+medium grey: #323232  
