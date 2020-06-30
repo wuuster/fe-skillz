@@ -2,7 +2,7 @@
 
 Below you will find an image. We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in 15 minutes. That is a valid approach but it won't get you very far with us.
 
-It also includes an accordion feature.
+The accordion is a common/simple feature that can done using multiple different methods and we would like to see what approach you come up with.
 
 The point of this Skill Assesment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finese. Are you a test finatic? Show us your TDD process. Love data and multi-teir designs? Let us see how you redux. Are you a build ninja? Let see those muscles flexed.
 
@@ -20,7 +20,9 @@ Good luck.
 
 ---
 
-The images from the above are in the directory next to this file. The copy is below.
+The images from the above are in the directory next to this file. 
+
+The copy is below.
 
 > The right conditions to make magic.
 
