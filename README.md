@@ -1,8 +1,9 @@
 # Front End Skill Assesment
 
-Below you will find an image. We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in 15 minutes. That is a valid approach but it won't get you very far with us.
+Below you will find an images of a header that contains sub-nav items.
+For desktop, on hover of the parent nav, sub-nav items should appear. For mobile, this will have an expand/collapse feature.
+We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in under an hour. That is a valid approach but it won't get you very far with us.
 
-The accordion is a common/simple feature that can executed via many different approaches, we would like to see what you come up with.
 
 The point of this Skill Assesment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finese. Are you a test finatic? Show us your TDD process. Love data and multi-teir designs? Let us see how you redux. Are you a build ninja? Let see those muscles flexed.
 
@@ -14,34 +15,42 @@ Good luck.
 
 ---
 
-### Assessment Image:
+## Assessment Images:
 
-![Assessment Image](./assessment.png)
+![Wonderful Desktop](./wonderful-desktop.png)
+![Wonderful Desktop Active Subnav](./wonderful-desktop-active-subnav.png)
+![Wonderful Mobile](./wonderful-mobile.png)
+![Wonderful Mobile Active Menu](./wonderful-mobile-active-menu.png)
+![Wonderful Mobile Active Subnav](./wonderful-mobile-active-subnav.png)
 
 ---
 
-### Images
+## Images
 
 The images from the above are in the directory next to this file. 
 
 ---
+## Style Guide
+**fonts**
+font-family: Arial
 
-### Copy
+**mobile**
+body
+font-size: 14px
 
-The copy is below.
+menu button
+font-size: 12px
 
-> The right conditions to make magic.
+**desktop**
+body
+font-size: 12px
 
-> A world-class wine requires two things—great soil and great climate. JUSTIN is blessed to have both. Many experts believe the conditions of the Central Coast are comparable to some of the premium growing regions in France.
-
-> Identically Ideal
->
-> The hot days, cold nights and limestone bedrock of Paso Robles, California mirror the ideal growing conditions of Bordeaux, France. No wonder our silky smooth Cabernet is so exceptional from every angle.
-
-> Drink in the Beauty
->
-> The JUSTIN Tasting Room is the perfect locale to begin your JUSTIN wine-tasting adventure. You'll savor a variety of carefully selected vintages while looking out onto the stunning hills of western Paso Robles.
-
-> Perfect Pairings
->
-> JUSTIN is the only winery on the Central Coast to offer a 5-star dining experience. The award-winning team at The Restaurant at JUSTIN works daily to pair our acclaimed wines with fresh, seasonal offerings from our on-site Chef's Garden.
+**Colors**
+white: #ffffff
+black: #000000
+gold: #d1a04f
+beige: #79766b
+dark grey background: #151515
+xdark grey: #202020
+dark grey: #353535
+medium grey: #323232
