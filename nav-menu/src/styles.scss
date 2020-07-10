@@ -1,0 +1,20 @@
+@import './css-reset';
+@import "./_variables";
+
+body {
+	background-color: #151515;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: $mobile-body-font-size;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: $desktop-body-font-size;
+  }
+}
