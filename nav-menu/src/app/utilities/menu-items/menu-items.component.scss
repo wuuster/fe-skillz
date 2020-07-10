@@ -1,0 +1,38 @@
+@import "../../../variables";
+
+.item {
+  height: 90px;
+  color: $beige;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  text-transform: uppercase;
+  background-color: $medium-grey;
+  display: flex;
+
+  &:hover {
+    outline: 1px solid
+  }
+
+  span{
+
+  }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .item {
+    height: 60px;
+    border-bottom: 1px solid #CDCDCD;
+    justify-content: flex-start;
+    padding-left: 24px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+  .item {
+  }
+}

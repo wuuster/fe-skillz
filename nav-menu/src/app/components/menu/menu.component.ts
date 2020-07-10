@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { MenuItemsComponent } from '../../utilities/menu-items/menu-items.component';
 
 @Component ({
   selector: 'app-menu-component',
