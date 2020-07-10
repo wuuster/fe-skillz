@@ -1,0 +1,25 @@
+@import "src/_variables";
+
+.logo {
+  background-image: url('src/assets/images/we_are_wonderful.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 60px;
+    background-position: 24px;
+    background-size: 116px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+  .logo {
+    height: 180px;
+  }
+
+}

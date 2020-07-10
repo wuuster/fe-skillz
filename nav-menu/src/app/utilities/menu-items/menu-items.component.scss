@@ -1,4 +1,4 @@
-@import "../../../variables";
+@import "src/_variables";
 
 .item {
   height: 90px;
@@ -11,12 +11,12 @@
   background-color: $medium-grey;
   display: flex;
 
-  &:hover {
-    outline: 1px solid
-  }
+  &:hover  {
+    cursor: pointer;
 
-  span{
-
+    span{
+      color: $gold;
+    }
   }
 }
 
@@ -33,6 +33,5 @@
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
-  .item {
-  }
+  .item {}
 }

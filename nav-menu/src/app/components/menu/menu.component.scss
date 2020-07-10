@@ -1,16 +1,35 @@
+@import "src/_variables";
+
+.menu {
+  background-color: $extra-dark-grey;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
+
 }
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
-  .menu-holder {
+  .menu {
     display: flex;
+    align-items: flex-end;
 
-    app-menu-items {
-      flex: 1;
-      display: block;
+    app-logo {
+      min-width: 180px
     }
+
+    .menu-holder {
+      display: flex;
+      flex: 1;
+
+      app-menu-items {
+        flex: 1;
+        display: block;
+      }
+
+    }
+
   }
 
 }

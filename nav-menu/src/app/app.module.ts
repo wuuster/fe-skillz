@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MenuItemsComponent } from './utilities/menu-items/menu-items.component';
+import { LogoComponent } from './utilities/logo/logo.component';
 
 @NgModule({
   declarations: [
-    AppComponent, MenuComponent, MenuItemsComponent
+    AppComponent, MenuComponent, MenuItemsComponent, LogoComponent
   ],
   imports: [
     BrowserModule,
