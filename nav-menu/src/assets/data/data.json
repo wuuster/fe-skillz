@@ -1,0 +1,30 @@
+[
+  {
+    "parent": "Eiusmod",
+    "child": ["dolor", "ullamco", "deserunt", "nostrud", "fugiat"]
+  },
+  {
+    "parent": "Incididunt Ut",
+    "child": ["accumsan", "libero"]
+  },
+  {
+    "parent": "Labore ET",
+    "child": ["sagittis", "Vestibulum", "vitae", "fermentum", "ornare"]
+  },
+  {
+    "parent": "Dolore Magn",
+    "child": ["Sed arcu non", "blandit"]
+  },
+  {
+    "parent": "Enim",
+    "child": ["Pretium", "bibendum", "tempor", "arcu"]
+  },
+  {
+    "parent": "Veniam",
+    "child": ["Massa", "scelerisque", "Nunc eget"]
+  },
+  {
+    "parent": "Quis",
+    "child": ["est pellentesque elit", "lorem ipsum"]
+  }
+]
