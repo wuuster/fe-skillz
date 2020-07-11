@@ -8,14 +8,22 @@ import { MenuItemsComponent } from './utilities/menu-items/menu-items.component'
 import { LogoComponent } from './utilities/logo/logo.component';
 import { MenuService } from './services/menu.service';
 
+import { ListState } from './state/list.state';
+import { NgxsModule } from '@ngxs/store';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { ListInputComponent } from './components/list-input/list-input.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent, MenuComponent, MenuItemsComponent, LogoComponent
+    AppComponent, MenuComponent, MenuItemsComponent, LogoComponent, ListInputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxsModule.forRoot([ListState]),
+    NgxsReduxDevtoolsPluginModule.forRoot()
   ],
   providers: [MenuService],
   bootstrap: [AppComponent]
