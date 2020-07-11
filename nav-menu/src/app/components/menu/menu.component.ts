@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import { MenuItemsComponent } from '../../utilities/menu-items/menu-items.component';
+import {Component, OnInit} from '@angular/core';
+import { MenuService } from '../../services/menu.service';
 
 @Component ({
   selector: 'app-menu-component',
@@ -7,8 +7,14 @@ import { MenuItemsComponent } from '../../utilities/menu-items/menu-items.compon
   styleUrls: ['./menu.component.scss']
 })
 
-export class MenuComponent {
-  constructor(){
-    console.log('Menu Item loaded');
+export class MenuComponent implements OnInit {
+  public data: any;
+  constructor(private menuService: MenuService) {}
+
+  ngOnInit() {
+    this.menuService.getMenuItems().subscribe((res) => {
+      console.log(res);
+      this.data = res;
+    });
   }
 }

@@ -1,13 +1,7 @@
 <div class="menu">
   <app-logo></app-logo>
 
-  <div class="menu-holder">
-    <app-menu-items></app-menu-items>
-    <app-menu-items></app-menu-items>
-    <app-menu-items></app-menu-items>
-    <app-menu-items></app-menu-items>
-    <app-menu-items></app-menu-items>
-    <app-menu-items></app-menu-items>
+  <div class="menu-holder" *ngFor="let el of data">
     <app-menu-items></app-menu-items>
   </div>
 
