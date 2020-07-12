@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
 import { MenuService } from '../../services/menu.service';
 import { MenuItems } from 'src/app/models/menu';
 
@@ -10,8 +10,10 @@ import { MenuItems } from 'src/app/models/menu';
 })
 
 export class MenuComponent implements OnInit {
+  @ViewChild ('list') list: ElementRef;
+  @ViewChild ('holder') holder: ElementRef;
   public data: any;
-  constructor(private menuService: MenuService, private menuItems: MenuItems) {
+  constructor(private menuService: MenuService, private menuItems: MenuItems, private renderer: Renderer2) {
     this.data = new MenuItems();
     this.data = [];
   }
@@ -21,4 +23,13 @@ export class MenuComponent implements OnInit {
       this.data = res;
     });
   }
+
+  getPosition(e){
+    this.list.nativeElement.style.display = 'block';
+    const posx = e.target.getBoundingClientRect().x + 'px';
+    this.list.nativeElement.style.left = posx;
+  }
+
+  hide() { this.list.nativeElement.style.display = 'none'; }
+  show() { this.list.nativeElement.style.display = 'block'; }
 }

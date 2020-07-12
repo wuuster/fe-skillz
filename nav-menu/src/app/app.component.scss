@@ -1,42 +1,4 @@
-@import "../_variables";
-
-ul {
-  background-color: #323232;
-  width: 100%;
+.app-holder {
   display: flex;
-  li {
-    height: 90px;
-    color: $beige;
-    font-weight: bold;
-    flex: 1;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: Arial;
-    text-transform: uppercase;
-    &:hover {
-      outline: 1px solid
-    }
-  }
-}
-
-/* Mobile */
-@media only screen and (max-width: 768px) {
-  ul {
-    flex-direction: column;
-    li {
-      height: 60px;
-      flex: unset;
-      border-bottom: 1px solid #CDCDCD;
-      display: flex;
-      justify-content: flex-start;
-      padding-left: 24px;
-    }
-
-  }
-}
-
-/* Desktop */
-@media only screen and (min-width: 769px) {
-
+  flex-direction: column;
 }

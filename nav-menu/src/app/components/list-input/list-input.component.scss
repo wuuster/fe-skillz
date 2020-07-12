@@ -1,0 +1,25 @@
+@import "src/_variables";
+
+.list {
+  background-color: $medium-grey;
+  padding: 24px 48px;
+  width: 100%;
+  max-width: 268px;
+  color: $beige;
+  font-family: $default-font;
+  text-transform: uppercase;
+
+  &:hover {
+    color: gold;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+
+}

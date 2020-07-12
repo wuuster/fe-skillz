@@ -1,6 +1,9 @@
 <div class="menu">
   <app-logo></app-logo>
-  <div class="menu-holder" *ngFor="let el of data">
-    <app-menu-items [data]="el"></app-menu-items>
+  <div class="menu-holder" #holder (mouseout)="hide()">
+    <ng-container *ngFor="let el of data">
+      <app-menu-items class="show" #menuBox (mouseover)="getPosition($event)" [data]="el"></app-menu-items>
+    </ng-container>
+    <div #list (mouseover)="show()" class="list-holder show"><app-list-input></app-list-input></div>
   </div>
 </div>
