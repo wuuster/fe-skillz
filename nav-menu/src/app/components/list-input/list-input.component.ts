@@ -1,4 +1,3 @@
-import {AddListItem} from 'src/app/actions/list.actions';
 import {Component} from '@angular/core';
 import {ListState} from 'src/app/state/list.state';
 import {Observable} from 'rxjs';
@@ -10,31 +9,23 @@ import {Store, Select} from '@ngxs/store';
   styleUrls: ['./list-input.component.scss']
 })
 export class ListInputComponent {
-  public submenuItems: object;
-  public stamp;
+  public submenuItems: any = [];
+  public data: object;
   @Select(ListState.SelectAllItems) listItems: Observable<string[]>;
-  constructor(private store: Store) {}
 
-  newItem(item) {
-    // ADD TO THE STORE
-    this.store.dispatch(new AddListItem(item));
-
-    // RETRIEVE FROM THE STORE
-    this.getValueFromObservable().then((data: any) => {
-      this.submenuItems = data;
+  constructor(private store: Store) {
+    this.listItems.subscribe( (data) => {
+      this.getValueFromObservable().then( ( val) => {
+        if (!val['ListState']['lastAdded']) { return; }
+        this.submenuItems = val;
+        this.data = this.submenuItems.ListState.lastAdded[0].child;
+      });
     });
-
-    // TODO: REMOVE THIS TIMESTAMP TEST
-    this.stamp = Date.now();
   }
 
   getValueFromObservable() {
     return new Promise(resolve => {
-      this.store
-        .subscribe(
-          (data: any) => {
-            resolve(data);
-          });
-      });
+      this.store.subscribe((data: any) => { resolve(data); });
+    });
   }
 }
