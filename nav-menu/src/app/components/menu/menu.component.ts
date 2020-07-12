@@ -12,10 +12,12 @@ import { MenuItems } from 'src/app/models/menu';
 export class MenuComponent implements OnInit {
   @ViewChild ('list') list: ElementRef;
   @ViewChild ('holder') holder: ElementRef;
+  public isMobile: boolean;
   public data: any;
   constructor(private menuService: MenuService, private menuItems: MenuItems, private renderer: Renderer2) {
     this.data = new MenuItems();
     this.data = [];
+    if (window.innerWidth <= 768) { this.isMobile = true; }
   }
 
   ngOnInit() {
@@ -25,11 +27,17 @@ export class MenuComponent implements OnInit {
   }
 
   getPosition(e){
-    this.list.nativeElement.style.display = 'block';
+    const el = this.list.nativeElement;
+    el.style.display = 'block';
     const posx = e.target.getBoundingClientRect().x + 'px';
-    this.list.nativeElement.style.left = posx;
+    el.style.left = posx;
   }
 
   hide() { this.list.nativeElement.style.display = 'none'; }
   show() { this.list.nativeElement.style.display = 'block'; }
+
+  getMobilePosition(e) {
+    e.target.append(document.getElementById('mobile-list'));
+    console.log(e);
+  }
 }

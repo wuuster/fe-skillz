@@ -16,6 +16,19 @@
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
+  .list {
+    background-color: $mobile-grey;
+    padding: 24px 48px;
+    width: 100%;
+    max-width: 100%;
+    color: $beige;
+    font-family: $default-font;
+    text-transform: uppercase;
+
+    &:hover {
+      color: gold;
+    }
+  }
 
 }
 

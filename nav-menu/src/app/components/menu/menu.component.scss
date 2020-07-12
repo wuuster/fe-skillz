@@ -6,7 +6,15 @@
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-
+  .menu {
+    .menu-holder {
+      .list-holder {
+        width: 100%;
+        position: relative;
+        top: 22px;
+      }
+    }
+  }
 }
 
 /* Desktop */

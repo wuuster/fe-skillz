@@ -12,9 +12,12 @@ import {Store, Select} from '@ngxs/store';
 
 export class MenuItemsComponent {
   @Input() data: string[];
+  public isMobile: boolean;
   public submenuItems: object;
   @Select(ListState.SelectAllItems) listItems: Observable<string[]>;
-  constructor(private store: Store) {}
+  constructor(private store: Store) {
+    if (window.innerWidth <= 768) { this.isMobile = true; }
+  }
 
   expandMenu(item) {
     // ADD TO THE STORE

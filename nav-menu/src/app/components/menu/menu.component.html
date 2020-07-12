@@ -1,9 +1,19 @@
-<div class="menu">
+<div id="desktop" class="menu" *ngIf="!isMobile">
   <app-logo></app-logo>
   <div class="menu-holder" #holder (mouseout)="hide()">
     <ng-container *ngFor="let el of data">
       <app-menu-items class="show" #menuBox (mouseover)="getPosition($event)" [data]="el"></app-menu-items>
     </ng-container>
     <div #list (mouseover)="show()" class="list-holder show"><app-list-input></app-list-input></div>
+  </div>
+</div>
+
+<div id="mobile" class="menu" *ngIf="isMobile">
+  <app-logo></app-logo>
+  <div class="menu-holder" #holder>
+    <ng-container *ngFor="let el of data">
+      <app-menu-items id="mobile-menu" #menuBox (click)="getMobilePosition($event)" [data]="el"></app-menu-items>
+    </ng-container>
+    <div id="mobile-list" #list (click)="show()" class="list-holder show"><app-list-input></app-list-input></div>
   </div>
 </div>
