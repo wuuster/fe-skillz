@@ -14,10 +14,12 @@ export class MenuComponent implements OnInit {
   @ViewChild ('holder') holder: ElementRef;
   public isMobile: boolean;
   public data: any;
+  private toggle: boolean;
   constructor(private menuService: MenuService, private menuItems: MenuItems, private renderer: Renderer2) {
     this.data = new MenuItems();
     this.data = [];
     if (window.innerWidth <= 768) { this.isMobile = true; }
+    this.toggle = false;
   }
 
   ngOnInit() {
@@ -38,6 +40,18 @@ export class MenuComponent implements OnInit {
 
   getMobilePosition(e) {
     e.target.append(document.getElementById('mobile-list'));
-    console.log(e);
+  }
+
+  tog(e) {
+    const group = document.querySelectorAll('.wonderful');
+    if (e.target.classList.contains('wonderful')) {
+      e.target.classList.remove('wonderful'); this.hide();
+    } else {
+      if (group) {
+        [].forEach.call(group, (el) => { el.classList.remove('wonderful'); });
+      }
+      e.target.classList.add('wonderful');
+      this.show();
+    }
   }
 }
