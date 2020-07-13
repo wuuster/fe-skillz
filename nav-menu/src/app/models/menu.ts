@@ -1,3 +1,3 @@
 export class MenuItems {
-  menuitem: any;
+  menuitem: object;
 }

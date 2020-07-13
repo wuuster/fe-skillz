@@ -7,7 +7,36 @@
 /* Mobile */
 @media only screen and (max-width: 768px) {
   .menu {
+    .tog {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-color: $dark-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        pointer-events: none;
+        transform: rotate(0deg);
+        width: 25px;
+        transition-duration: 0.5s;
+      }
+
+      &.rot {
+        img {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
     .menu-holder {
+      &.hide {
+        display: none;
+      }
+
       .list-holder {
         width: 100%;
         position: relative;
@@ -45,7 +74,5 @@
         cursor: pointer;
       }
     }
-
-    }
-
   }
+}

@@ -1,3 +1,2 @@
 <div  *ngIf="!isMobile" id="desktop" class="item" (mouseover)="expandMenu([data])">{{data['parent']}}</div>
-
 <div *ngIf="isMobile" id="mobile" class="item" (click)="expandMenu([data])">{{data['parent']}}</div>

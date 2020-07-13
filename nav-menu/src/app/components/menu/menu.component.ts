@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 import { MenuService } from '../../services/menu.service';
 import { MenuItems } from 'src/app/models/menu';
 
@@ -15,7 +15,8 @@ export class MenuComponent implements OnInit {
   public isMobile: boolean;
   public data: any;
   private toggle: boolean;
-  constructor(private menuService: MenuService, private menuItems: MenuItems, private renderer: Renderer2) {
+  public status;
+  constructor(private menuService: MenuService, private menuItems: MenuItems) {
     this.data = new MenuItems();
     this.data = [];
     if (window.innerWidth <= 768) { this.isMobile = true; }
@@ -30,8 +31,8 @@ export class MenuComponent implements OnInit {
 
   getPosition(e){
     const el = this.list.nativeElement;
-    el.style.display = 'block';
     const posx = e.target.getBoundingClientRect().x + 'px';
+    el.style.display = 'block';
     el.style.left = posx;
   }
 
@@ -47,11 +48,13 @@ export class MenuComponent implements OnInit {
     if (e.target.classList.contains('wonderful')) {
       e.target.classList.remove('wonderful'); this.hide();
     } else {
-      if (group) {
-        [].forEach.call(group, (el) => { el.classList.remove('wonderful'); });
-      }
-      e.target.classList.add('wonderful');
-      this.show();
+      if (group) { [].forEach.call(group, (el) => { el.classList.remove('wonderful'); }); }
+      e.target.classList.add('wonderful'); this.show();
     }
+  }
+
+  expand(e) {
+    this.holder.nativeElement.classList.toggle('hide');
+    e.target.classList.toggle('rot');
   }
 }

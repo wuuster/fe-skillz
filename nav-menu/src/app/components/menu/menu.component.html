@@ -10,6 +10,8 @@
 
 <div id="mobile" class="menu" *ngIf="isMobile">
   <app-logo></app-logo>
+  <div class="tog" (click)=expand($event)>
+    <img src="assets/images/close.png"></div>
   <div class="menu-holder" #holder>
     <div (click)="tog($event)">
     <ng-container *ngFor="let el of data">

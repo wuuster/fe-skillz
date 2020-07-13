@@ -1,5 +1,5 @@
-import { State, Selector, Action, StateContext } from '@ngxs/store';
-import { AddListItem } from 'src/app/actions/list.actions';
+import {State, Selector, Action, StateContext} from '@ngxs/store';
+import {AddListItem} from 'src/app/actions/list.actions';
 
 export interface ListStateModel {
   list: string[];
@@ -15,14 +15,15 @@ export interface ListStateModel {
 })
 
 export class ListState {
-  @Selector() static SelectAllItems(state: ListStateModel): string[] {
+  @Selector()
+  static SelectAllItems(state: ListStateModel): string[] {
     return state.list;
   }
 
   @Action(AddListItem)
   addListItem(
-    { getState, setState }: StateContext<ListStateModel>,
-    { payload }: AddListItem
+    {getState, setState}: StateContext<ListStateModel>,
+    {payload}: AddListItem
   ) {
     const state = getState();
     setState({
